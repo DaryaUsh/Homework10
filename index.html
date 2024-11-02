@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Story API Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Fake Story API Demo</h1>
+
+    <div id="message"></div>
+
+    <form id="addProductForm">
+        <h2>Add New Product</h2>
+        <input type="text" id="productTitle" placeholder="Title" required>
+        <input type="number" id="productPrice" placeholder="Price" step="0.01" required>
+        <input type="text" id="productDescription" placeholder="Description" required>
+        <input type="text" id="productImage" placeholder="Image URL" required>
+        <input type="text" id="productCategory" placeholder="Category" required>
+        <button type="submit">Add Product</button>
+    </form>
+
+    <div class="filter">
+        <h2>Filters</h2>
+        <button class="button button_all" data-filter="all">All</button>
+        <button class="button button_electronics" data-filter="electronics">Electronics</button>
+        <button class="button button_jewelery" data-filter="jewelery">Jewelery</button>
+        <button class="button button_men's_clothing" data-filter="men's clothing">Men's clothing</button>
+        <button class="button button_women's_clothing" data-filter="women's clothing">Women's clothing</button>
+    </div>
+    
+
+    <h2>Products</h2>
+    <div id="productList"></div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
