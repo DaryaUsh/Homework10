@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Story API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <header class="header">
+            <div>
+                <nav class="nav">
+                    <a href="#"><img class="logo" src="./img/logo.svg" alt=""></a>
+                    <nav class="menu">
+                        <ul class="nav_items">
+                            <li class="menu_item" ><a class="menu_link" href="">О компании</a></li>
+                            <li class="menu_item" ><a class="menu_link" href="">Услуги и акции</a></li>
+                            <li class="menu_item" ><a class="menu_link" href="">Обратная связь</a></li>
+                            <li class="menu_item" ><a class="menu_link" href="">Подарочные карты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="icon">
+                        <div class="person">
+                            <a href="#"><img src="./img/bag.svg" alt=""></a>
+                            <a href="#"><img src="./img/person.svg" alt=""></a>
+                        </div>
+                        <a href="#"><img src="./img/lupa.svg" alt=""></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </header>
+
+    <main>
+        <h1>Fake Story API</h1>
+
+        <div id="message"></div>
+
+        <form class="form_add" id="addProductForm">
+            <h2>Add New Product</h2>
+            <div class="input">
+                <input type="text" id="productTitle" placeholder="Title" required>
+                <input type="number" id="productPrice" placeholder="Price" step="0.01" required>
+                <input type="text" id="productDescription" placeholder="Description" required>
+                <input type="text" id="productImage" placeholder="Image URL" required>
+                <input type="text" id="productCategory" placeholder="Category" required>
+            </div>
+            <button type="submit">Add Product</button>
+        </form>
+
+        <div class="filter">
+            <h2>Filters</h2>
+        </div>
+        
+
+        <h2>Products</h2>
+        <div id="productList"></div>
+
+        <div id="load-more"> Загрузить ещё </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="list">
+            <a class="prod-link" href="">О компании</a>
+            <a class="prod-link" href="">Услуги и акции</a>
+            <a class="prod-link" href="">Обратная связь</a>
+            <a class="prod-link" href="">Подарочные карта</a>
+        </div>
+        <div class="about">
+
+            <a href="#"><img class="footer-logo" src="./img/logo.svg" alt="Логотип"></a>
+            <div class = "contacts">
+                <div class="phone">
+                    <img class="footer-tel" src="./img/teleph.png">
+                    <a href="tel:+370680123456">+370 680 123456</a>
+                </div>
+                <div class="email">
+                    <img class="footer-email" src="./img/email.png">
+                    <a href="mailto:info@tealuxe.com">info@tealuxe.com</a>
+                </div>
+            </div>
+
+            
+            
+            <div class="footer-soc-set">
+                <img src="./img/fb.png" alt="Фейсбук" class="fot-soc-set">
+                <img src="./img/ut.png" alt="Ютуб" class="fot-soc-set">
+                <img src="./img/instgr.png" alt="Инстаграм" class="fot-soc-set">
+                <img src="./img/tweet.png" alt="Твиттер" class="fot-soc-set">
+            </div>
+            
+        </div>
+
+        <div class="copyright">
+            <small>&copy; Clothes, 2024</small>
+            <div class="img-pay">
+                <img class="pay1" src="./img/mastercard.png" alt="мастеркарт">
+                <img class="pay" src="./img/visa.png" alt="виза">
+                <img class="pay" src="./img/gpay.png" alt="гуглпай">
+                <img class="pay" src="./img/paypal.png" alt="пайпал">
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
